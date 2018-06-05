@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.notification-window{
+    width: 380px;
+    min-height: 180px;
+    border-radius: 5px;
+    background: white;
+    position: fixed;
+    top: 0px;
+    right: 3px;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: gray;
+    border: 1px solid #f2f2f2;
+    box-shadow: 3px 6px rgba(242, 242, 242, 0.7);
+    display:none;
+}
+
+.notification-window:focus {
+    outline: none;
+}
+
+.notification-window > .wrapper{
+    box-sizing: border-box;
+    width:100%;
+    padding:10px;
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-column-gap: 5px;
+    justify-items: center;
+    align-items: start;
+}
+
+
+.content{
+    border: 1px solid black;
+    width: 280px;
+    height: 100px;
+    overflow-y: scroll;
+    padding: 5px;
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.main-text{
+    white-space: pre-line;
+}
+
+.main-text::first-line{
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+}
+
+.close-icon{
+    color:gray;
+    text-decoration: none;
+    padding:5px;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color:dodgerblue;
+    background: #dde0df;
+}
+
+.footer{
+    height:35px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    position:absolute;
+    bottom: 0px;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.footer > .wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    user-select: none;
+}
+.chevron-circle{
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 4px;
+    text-align: center;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+}
+
+.chevron-circle:hover{
+    border-color: dodgerblue;
+    color: dodgerblue;
+}
+
+
+.hint-marks{
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 9px;
+    list-style: none;
+}
+
+.hint-marks li{
+    margin-right: 3px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.nav-footer{
+    color: grey;
+    justify-self: right;
+}
+
+.nav-footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.checkbox-footer{
+    justify-self: left;
+}
+
+.active{
+    color: dodgerblue;
+}
+
+
+
